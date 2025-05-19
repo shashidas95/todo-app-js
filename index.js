@@ -1,4 +1,4 @@
-// Step 1: Define an array of todo items
+// todo items
 const todos = [
  { title: "Do homework", done: false },
  { title: "Buy groceries", done: true },
@@ -7,11 +7,11 @@ const todos = [
  { title: "Call mom", done: false }
 ];
 
-// Step 2: Separate todos into completed and ongoing
+// Separate todos into completed and ongoing
 const completedTasks = todos.filter(todo => todo.done === true);
 const ongoingTasks = todos.filter(todo => todo.done === false);
 
-// Step 3: Display the results
+// Display the results
 console.log("=== Done ===");
 completedTasks.forEach(todo => {
  console.log("- " + todo.title);
